@@ -580,6 +580,64 @@
           </form>
         </div>
       </div>
-    </footer>
-  </body>
+    <div class="modal-container" id="modal-container">
+  <div class="modal">
+    <button type="button" class="close-btn" id="close-btn">
+      <svg width="8" height="8">
+        <use href="./images/icons.svg#close-icon"></use>
+      </svg>
+    </button>
+    <p>This is a modal window</p>
+    <form class="modal-form">
+      <div class="form-group">
+        <label for="user-name">Name</label>
+        <div class="input-container">
+          <input type="text" id="user-name" name="user-name">
+          <svg width="18" height="24">
+            <use href="./images/icons.svg#user-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="user-phone">Phone</label>
+        <div class="input-container">
+          <input type="text" id="user-phone" name="user-phone">
+          <svg width="18" height="24">
+            <use href="./images/icons.svg#phone-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="user-email">Email</label>
+        <div class="input-container">
+          <input type="email" id="user-email" name="user-email">
+          <svg width="18" height="24">
+            <use href="./images/icons.svg#email-icon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="user-comment">Comment</label>
+        <div class="input-container">
+          <textarea id="user-comment" name="user-comment" placeholder="Text input"></textarea>
+        </div>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="user-privacy" name="user-privacy" value="true">
+        <label for="user-privacy"><span></span>I accept the terms and conditions of the</label>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById('close-btn').addEventListener('click', function() {
+    document.getElementById('modal-container').classList.remove('visible');
+  });
+
+  // To open the modal, add the 'visible' class to the modal-container
+  // document.getElementById('modal-container').classList.add('visible');
+</script>
+
+</body>
 </html>
