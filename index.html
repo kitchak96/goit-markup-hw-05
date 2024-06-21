@@ -495,7 +495,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <div class="container container-footer">
         <div class="footer-additional-container">
@@ -515,7 +514,7 @@
                 class="header-social-link-footer"
                 href=""
                 target="_blank"
-                rel="no-oppener no-referrer"
+                rel="noopener noreferrer"
               >
                 <svg class="social-media-icons-footer" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
@@ -527,7 +526,7 @@
                 class="header-social-link-footer"
                 href=""
                 target="_blank"
-                rel="no-oppener no-referrer"
+                rel="noopener noreferrer"
               >
                 <svg class="social-media-icons-footer" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
@@ -539,7 +538,7 @@
                 class="header-social-link-footer"
                 href=""
                 target="_blank"
-                rel="no-oppener no-referrer"
+                rel="noopener noreferrer"
               >
                 <svg class="social-media-icons-footer" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
@@ -551,7 +550,7 @@
                 class="header-social-link-footer"
                 href=""
                 target="_blank"
-                rel="no-oppener no-referrer"
+                rel="noopener noreferrer"
               >
                 <svg class="social-media-icons-footer" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -560,84 +559,27 @@
             </li>
           </ul>
         </div>
-        <div class="form-container">
-          <p class="form-title">Subscribe</p>
+        <!-- New container for the subscription form -->
+        <div class="subscribe-container">
+          <p class="subscribe-title">Subscribe</p>
           <form class="subscribe-form">
-            <label class="email-label">
+            <label class="subscribe-label">
               <input
-                class="email-input"
+                class="subscribe-input"
                 type="email"
                 name="email"
                 placeholder="E-mail"
               />
             </label>
-            <button class="submit-button" type="submit">
+            <button class="subscribe-button" type="submit">
               Subscribe
-              <svg class="button-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-submit"></use>
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
-    <div class="modal-container" id="modal-container">
-  <div class="modal">
-    <button type="button" class="close-btn" id="close-btn">
-      <svg width="8" height="8">
-        <use href="./images/icons.svg#close-icon"></use>
-      </svg>
-    </button>
-    <p>This is a modal window</p>
-    <form class="modal-form">
-      <div class="form-group">
-        <label for="user-name">Name</label>
-        <div class="input-container">
-          <input type="text" id="user-name" name="user-name">
-          <svg width="18" height="24">
-            <use href="./images/icons.svg#user-icon"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="user-phone">Phone</label>
-        <div class="input-container">
-          <input type="text" id="user-phone" name="user-phone">
-          <svg width="18" height="24">
-            <use href="./images/icons.svg#phone-icon"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="user-email">Email</label>
-        <div class="input-container">
-          <input type="email" id="user-email" name="user-email">
-          <svg width="18" height="24">
-            <use href="./images/icons.svg#email-icon"></use>
-          </svg>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="user-comment">Comment</label>
-        <div class="input-container">
-          <textarea id="user-comment" name="user-comment" placeholder="Text input"></textarea>
-        </div>
-      </div>
-      <div class="checkbox-group">
-        <input type="checkbox" id="user-privacy" name="user-privacy" value="true">
-        <label for="user-privacy"><span></span>I accept the terms and conditions of the</label>
-      </div>
-    </form>
-  </div>
-</div>
-
-<script>
-  document.getElementById('close-btn').addEventListener('click', function() {
-    document.getElementById('modal-container').classList.remove('visible');
-  });
-
-  // To open the modal, add the 'visible' class to the modal-container
-  // document.getElementById('modal-container').classList.add('visible');
-</script>
-
-</body>
+    </footer>
+  </body>
 </html>
