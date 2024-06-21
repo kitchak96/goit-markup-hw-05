@@ -401,40 +401,101 @@ p {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Global Reset (optional, if not already included) */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Footer Container Styles */
 .footer {
-  background-color: #333; /* Example background color */
-  padding: 40px 0;
-  color: #fff; /* Example text color */
-  text-align: center;
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
+}
+.footer-studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
 }
 
-/* Container for form elements */
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  width: 264px;
+  text-wrap: wrap;
+}
+
 .container-footer {
   display: flex;
-  justify-content: center;
+  align-items: baseline;
+  margin: 0 auto;
+  padding: 0 120px;
+}
+img {
+  display: block;
+}
+.social-media-footer {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.social-media-list-footer {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.instagram-footer {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.header-social-link-footer {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  gap: 24px; /* Gap between form elements */
-  margin-top: 20px; /* Example margin top */
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-social-link-footer:hover,
+.header-social-link-footer:focus {
+  background-color: #31d0aa;
+}
+.social-media-icons-footer {
+  fill: #f4f4fd;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.footer-additional-container {
+  margin-right: 120px;
 }
 
-/* Additional Container inside footer */
-.footer-additional-container {
+.form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-/* Styling for the Subscribe paragraph */
-.subscribe-para {
-  margin-bottom: 16px; /* Example margin bottom */
+.form-title {
+  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -442,21 +503,16 @@ p {
   color: #ffffff;
 }
 
-/* Form Styles */
-.footer-form {
+.subscribe-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 24px;
 }
 
-/* Label Styles */
-.form-label {
-  margin-bottom: 8px; /* Example margin bottom */
-  color: #ffffff;
+.email-label {
+  display: flex;
 }
 
-/* Input Styles */
-.input-email {
+.email-input {
   width: 264px;
   height: 40px;
   border: 1px solid #ffffff;
@@ -468,15 +524,13 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
-  margin-bottom: 16px; /* Example margin bottom */
 }
 
-.input-email::placeholder {
-  color: #ffffff; /* Placeholder text color */
+.email-input::placeholder {
+  color: #ffffff;
 }
 
-/* Subscribe Button Styles */
-.button-subscribe {
+.submit-button {
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -494,23 +548,6 @@ p {
   border-radius: 4px;
 }
 
-.button-subscribe:hover {
-  background-color: #3b48cc; /* Example hover background color */
-}
-
-/* SVG Icon Styles */
-.subscribe-svg {
-  margin-left: 16px; /* Example margin left */
-}
-
-/* Responsive Adjustments (example for smaller screens) */
-@media screen and (max-width: 600px) {
-  .container-footer {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .input-email {
-    width: 100%; /* Full width on smaller screens */
-  }
+.button-icon {
+  margin-left: 16px;
 }
