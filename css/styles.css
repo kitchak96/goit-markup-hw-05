@@ -787,8 +787,10 @@ img {
   border-color: #4D5AE5;
 }
 
-.checkbox-label input:checked + .checkbox-custom {
+.checkbox-container input:checked + .checkbox-label .checkbox-custom {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
 }
+
+
